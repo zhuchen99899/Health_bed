@@ -1,0 +1,16 @@
+INPUT(
+./debug\main.o
+./debug\widget.o
+./debug\dialog.o
+./debug\dialog2.o
+./debug\form.o
+./debug\qrc_resource.o
+./debug\moc_widget.o
+./debug\moc_dialog.o
+./debug\moc_dialog2.o
+./debug\moc_form.o
+./debug\moc_qmqttclient.o
+./debug\moc_qmqttconnection_p.o
+./debug\moc_qmqttmessage.o
+./debug\moc_qmqttsubscription.o
+);

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<!--桌面线性布局-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        >
+
+    <!--轮播图区域线性布局-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="251dp"
+            android:background="#FFFFFF">
+            <!--轮播图-->
+                <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:src="@drawable/timg">
+
+                </ImageView>
+
+        </LinearLayout>
+
+
+
+
+    <!--        图标线性布局-->
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+             <!--第一行图标线性布局-->
+                 <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                    <!--图标一-->
+                    <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_gravity="center_horizontal"
+                            android:id="@+id/ID_IMAGE_0"
+                            android:layout_height="64dp"
+                            android:src="@drawable/bed">
+
+                        </ImageView>
+
+                        <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="侧翻">
+
+                        </TextView>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            <!--第二行图标线性布局-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <SeekBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="2dp"
+                    android:id="@+id/ID_SeekBar_0"
+                    android:max="100"
+                    android:progress="30">
+
+                </SeekBar>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
